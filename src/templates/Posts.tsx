@@ -16,7 +16,19 @@ const Posts = ({ data, location }: PageProps<Queries.Query>) => {
 
 export default Posts;
 
-export const Head: HeadFC = () => <SEO title="Posts"></SEO>;
+interface DataHead {
+    markdownRemark?: {
+        frontmatter?: {
+            title?: string;
+        }
+    }
+}
+
+export const Head: HeadFC = ({data}: HeadProps<DataHead>) => {
+    const markdown = data.markdownRemark;
+    const title = markdown?.frontmatter?.title;
+    return <SEO title={title ? title : 'Post'}></SEO>
+};
 
 export const query = graphql`
     query ($slug: String!) {
