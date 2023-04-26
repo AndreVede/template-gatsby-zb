@@ -12,7 +12,6 @@ interface LayoutProps {
 }
 
 const Main = styled.main`
-    margin-top: 50px;
     ${flexCenter('column', 'flex-start')}
     gap: 10px;
 `;
@@ -37,7 +36,7 @@ const Layout: React.FC<LayoutProps> = ({ location, children }) => {
             <ThemeProvider theme={ThemeDefault}>
                 <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
                 <Main>{children}</Main>
-                <Footer />
+                <Footer siteTitle={data.site.siteMetadata.title} />
             </ThemeProvider>
         </>
     );

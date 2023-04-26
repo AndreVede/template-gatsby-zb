@@ -4,10 +4,6 @@ import { Link } from 'gatsby';
 import { flexCenter, fontMonserrat } from '../style-utils/styles-variables';
 
 const HeaderContainer = styled.header`
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
