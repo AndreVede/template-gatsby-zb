@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
     escription: 'Description of site',
     author: 'Zacharie Boisnard',
     siteUrl: `https://www.yourdomain.tld`,
-    lang: 'fr',
+    lang: 'en',
     menuLinks: [
       {
         name: 'Home',
