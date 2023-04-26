@@ -16,6 +16,10 @@
     ```shell
     # create a new Gatsby site using the minimal TypeScript starter
     npm init gatsby -- -ts
+    
+    # create a Gatsby site using this Template
+    npx gatsby new app-name https://github.com/AndreVede/template-gatsby-zb.git
+    # (You have to change the app name in package.json and gatsby-config.ts)
     ```
 
 2.  **Start developing.**
