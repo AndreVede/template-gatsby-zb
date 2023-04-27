@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Template-ZB`,
-    escription: 'Description of site',
+    description: 'Description of site',
     author: 'Zacharie Boisnard',
     siteUrl: `https://www.yourdomain.tld`,
     lang: 'en',
