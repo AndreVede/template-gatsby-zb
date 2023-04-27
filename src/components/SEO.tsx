@@ -20,7 +20,7 @@ export const SEO: React.FC<SEOProps> = ({ title, description, pathname, lang, ch
     const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        url: `${siteUrl}${pathname || ``}`,
+        url: `${siteUrl}${pathname || ''}`,
         author: author,
         lang: lang || defaultLang,
     };
