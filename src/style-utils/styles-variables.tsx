@@ -63,6 +63,6 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 15px;
         margin: 0;
         padding: 0;
-        min-width: 300px;
+        min-width: ${breakPoints.minPhone}px;
     }
 `;
