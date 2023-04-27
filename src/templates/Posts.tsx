@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from './Layout';
 import { SEO } from '../components/SEO';
 
-const Posts = ({ data, location }: PageProps<Queries.Query>) => {
+const Posts: React.FC<PageProps<Queries.Query>> = ({ data, location }) => {
     const markdown = data.markdownRemark;
     return (
         <Layout location={location}>
